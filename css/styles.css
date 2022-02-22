@@ -231,3 +231,9 @@ img {
     margin: 0;
     font-size: 2rem;
 }
+
+/** Seguridad **/
+
+.seguridad {
+    background-color: var(--primario);
+}

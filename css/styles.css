@@ -192,10 +192,44 @@ img {
     margin-bottom: 5rem;
 }
 
+.nucleus__grid {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
 @media (min-width: 768px) {
     .nucleus__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 5rem;
+        align-items: center;
     }
+}
+
+
+
+.listado {}
+
+.listado__elemento {
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .20);
+    padding: 2rem;
+    margin-bottom: 5rem;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.listado__elemento:hover {
+    transform: scale(1.1);
+}
+
+.listado__heading {
+    font-size: 3rem;
+    color: var(--primario);
+    margin: 0;
+}
+
+.listado__texto {
+    margin: 0;
+    font-size: 2rem;
 }

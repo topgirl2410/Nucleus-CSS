@@ -1,5 +1,6 @@
 :root {
     --primario: #6834a6;
+    --secundario: #5a30a0;
     --blanco: #FFF;
     --negro: #000000;
     --fuentePrincipal: 'Poppins', sans-serif;
@@ -361,4 +362,31 @@ img {
     color: var(--primario);
     font-weight: 700;
     text-align: right;
+}
+
+
+/** Footer **/
+
+.footer {
+    background-color: var(--secundario);
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .footer__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+}
+
+@media (min-width: 768px) {
+    .footer__logo {
+        margin: 0;
+    }
 }
